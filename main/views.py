@@ -7,6 +7,9 @@ from django.views.decorators.csrf import csrf_exempt
 import json
 
 
+def test_redir(request):
+    return redirect("dashboard")
+
 @csrf_exempt
 def update_status(request):
     if request.method == "POST":
