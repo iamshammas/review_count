@@ -1,0 +1,1 @@
+web: gunicorn review_count.wsgi:application
